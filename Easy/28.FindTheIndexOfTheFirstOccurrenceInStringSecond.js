@@ -16,7 +16,18 @@
 // haystack and needle consist of only lowercase English characters.
 
 var strStr = function (haystack, needle) {
-  return haystack.indexOf(needle);
+  if (needle === "") return -1;
+  let j = 0;
+  for (let i = 0; i < haystack.length; i++) {
+    if (haystack[i] === needle[j]) {
+      ++j;
+      if (needle.length === j) return i - needle.length + 1;
+    } else {
+      i -= j;
+      j = 0;
+    }
+  }
+  return -1;
 };
 
 console.log(strStr("sadbutsad", "sad"));
