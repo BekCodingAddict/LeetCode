@@ -38,16 +38,25 @@
 //   //   return [0, 0];
 // };
 
-var twoSum = function (nums, target) {
-  const map = {};
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] in map) {
-      return [map[nums[i]], i];
-    }
-    map[target - nums[i]] = i;
-  }
+// var twoSum = function (nums, target) {
+//   const map = {};
+//   for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] in map) {
+//       return [map[nums[i]], i];
+//     }
+//     map[target - nums[i]] = i;
+//   }
 
-  return [0, 0];
+//   return [0, 0];
+// }; // time Complexity O(n) space Complexity O(n)
+
+var twoSum = function (nums, target) {
+  let second = 0;
+  for (let i = 1; i < nums.length; i++) {
+    if (target !== nums[second] + nums[i]) {
+      second += 1;
+    }
+  }
 }; // time Complexity O(n) space Complexity O(n)
 
 console.log(twoSum([1, 3, 4, 2], 6)); //pass
