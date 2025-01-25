@@ -26,3 +26,41 @@
 // arr is a valid JSON array
 // fn is a function that returns a number
 // 1 <= arr.length <= 5 * 105
+var sortBy = function (arr, fn) {
+  // Base case: arrays with 0 or 1 element are already sorted
+  if (arr.length <= 1) {
+    return arr;
+  }
+
+  // Choose a pivot element (here, the last element)
+  const pivot = arr[arr.length - 1];
+
+  // Arrays to hold the elements less than and greater than the pivot
+  const left = [];
+  const right = [];
+
+  // Partition the array into left and right sub-arrays
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (fn(arr[i]) < fn(pivot)) {
+      left.push(arr[i]);
+    } else {
+      right.push(arr[i]);
+    }
+  }
+
+  // Recursively sort the left and right sub-arrays, and combine with the pivot
+  return [...sortBy(left, fn), pivot, ...sortBy(right, fn)];
+};
+
+console.log(sortBy([5, 4, 1, 2, 3], (x) => x));
+console.log(sortBy([{ x: -1 }, { x: 0 }, { x: 1 }], (d) => d.x));
+console.log(
+  sortBy(
+    [
+      [10, 1],
+      [5, 2],
+      [3, 4],
+    ],
+    (x) => x[1]
+  )
+);
