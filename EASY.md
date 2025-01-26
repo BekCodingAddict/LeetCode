@@ -1,4 +1,5 @@
 ## EASY
+
 - [#1.TwoSum](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/1.TwoSum.js)
 - [#2.Palindrome Number](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/2.PalindromeNumber.js)
 - [#4.Longest Common Prefix](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/4.LongestCommonPrefix.js)
@@ -16,3 +17,4 @@
 - [#283.Move Zeroes](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/283.MoveZeroes.js)
 - [#459.Repeated Substring Pattern](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/459.RepeatedSubstringPattern.js)
 - [#2727.Is Object Empty](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/2727.Is-Object-Empty.js)
+- [#344.Reverse String](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/344.Reverse-String.js)
