@@ -15,6 +15,7 @@
 - [#94.Binary Tree in Order Traversal](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/94.BinaryTreeInorderTraversal.js)
 - [#283.Move Zeroes](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/283.Move-Zeroes.js)
 - [#283.Move Zeroes](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/283.MoveZeroes.js)
+- [#344.Reverse String](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/344.Reverse-String.js)
+- [#412.Fizz Buzz](https://github.com/BekCodingAddict/LeetCode/tree/master/Easy/412.Fizz-Buzz)
 - [#459.Repeated Substring Pattern](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/459.RepeatedSubstringPattern.js)
 - [#2727.Is Object Empty](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/2727.Is-Object-Empty.js)
-- [#344.Reverse String](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/344.Reverse-String.js)
