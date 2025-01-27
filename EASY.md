@@ -13,6 +13,7 @@
 - [#58.Length of Last Word](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/58.Length-of-Last-Word.js)
 - [#66.Plus One](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/66.Plus-One.js)
 - [#94.Binary Tree in Order Traversal](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/94.BinaryTreeInorderTraversal.js)
+- [#104.Maximum Depth of Binary Tree](https://github.com/BekCodingAddict/LeetCode/tree/master/Easy/104.Maximum-Depth-of-Binary-Tree)
 - [#136.Single Number](https://github.com/BekCodingAddict/LeetCode/tree/master/Easy/136.Single-Number)
 - [#283.Move Zeroes](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/283.Move-Zeroes.js)
 - [#283.Move Zeroes](https://github.com/BekCodingAddict/LeetCode/blob/master/Easy/283.MoveZeroes.js)
