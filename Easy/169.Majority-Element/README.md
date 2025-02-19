@@ -115,3 +115,55 @@ var majorityElement = function (nums) {
 
 - Time Complexity: O(n) → Only one loop through nums.
 - Space Complexity: O(1) → Uses only a few extra variables.
+
+### Solution 3
+My 3rd solution uses a hash map (object) to count occurrences of each number and then finds the majority element by sorting the keys based on their frequency.
+```js
+var majorityElement = function (nums) {
+  let map = {};
+
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] in map) {
+      map[nums[i]] += 1;
+    } else {
+      map[nums[i]] = 1;
+    }
+  }
+
+  return Number(
+    Object.keys(map)
+      .sort((a, b) => map[b] - map[a])
+      .at(0)
+  );
+};
+
+console.log(majorityElement([3, 2, 3]));
+console.log(majorityElement([2, 2, 1, 1, 1, 2, 2]));
+```
+### 🚀 Why Is This Slower?
+- The sorting step O(n log n) makes it slower than Boyer-Moore (O(n)).
+- Sorting is unnecessary since we can track the max count while iterating.
+### 🔥 Optimized Hash Map Solution (O(n))
+Instead of sorting, we track the most frequent element while iterating.
+```js
+var majorityElement = function (nums) {
+  let map = {};
+  let majority = nums[0], maxCount = 0;
+
+  for (let num of nums) {
+    map[num] = (map[num] || 0) + 1;
+    
+    if (map[num] > maxCount) {
+      maxCount = map[num];
+      majority = num;
+    }
+  }
+
+  return majority;
+};
+```
+### ✅ Why Is This Better?
+- No sorting → O(n) time instead of O(n log n).
+- Tracks the max count while iterating → faster than sorting keys.
+
+
